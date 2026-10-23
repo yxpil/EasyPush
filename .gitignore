@@ -1,0 +1,16 @@
+node_modules/
+dist/
+release/
+test-results/
+playwright-report/
+e2e-data/
+*.log
+.DS_Store
+.env
+build/icon.ico
+build/icon.png
+assets/icon.png
+web/icon-192.png
+web/icon-512.png
+web/public/icon-192.png
+web/public/icon-512.png

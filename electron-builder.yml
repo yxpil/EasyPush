@@ -1,0 +1,35 @@
+appId: com.easypush.receiver
+productName: EasyPush
+copyright: Copyright © 2026 yxpil
+
+directories:
+  output: release
+  buildResources: build
+
+files:
+  - dist/**/*
+  - package.json
+  - '!**/*.map'
+
+asar: true
+
+extraResources:
+  - from: assets/icon.png
+    to: assets/icon.png
+
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: build/icon.ico
+  artifactName: EasyPush-${version}-${arch}.${ext}
+
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: EasyPush
+  deleteAppDataOnUninstall: false
